@@ -1,5 +1,30 @@
 {
-  "users": [{ "id": 1, "name": "Myra" }],
+  "users": [
+    {
+      "id": 1,
+      "name": "Myra"
+    },
+    {
+      "name": "Jacqueline Bode",
+      "id": 2
+    },
+    {
+      "name": "Johnathan Abernathy",
+      "id": 3
+    },
+    {
+      "name": "Jessie Gibson",
+      "id": 4
+    },
+    {
+      "name": "Lance Effertz",
+      "id": 5
+    },
+    {
+      "name": "Ida Metz",
+      "id": 6
+    }
+  ],
   "albums": [],
   "photos": []
 }
