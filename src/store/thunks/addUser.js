@@ -8,4 +8,4 @@ export const addUser = createAsyncThunk('users/add', async () => {
   });
   
   return response.data;
-});;
+});

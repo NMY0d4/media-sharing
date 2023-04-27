@@ -10,17 +10,16 @@ const usersSlice = createSlice({
     error: null,
   },
   extraReducers(builder) {
-    builder.addCase(fetchUsers.pending, (state, action) => {
-      // Update our state object however appropriate
-      // to show the user what we are loading data
-      state.isLoading = true;
-    });
+    // ///////// FETCH all users in db
+    // builder.addCase(fetchUsers.pending, (state, action) => {
+    //   // Update our state object however appropriate
+    //   // to show the user what we are loading data
+    //   state.isLoading = true;
+    // });
     builder.addCase(fetchUsers.fulfilled, (state, action) => {
-      state.isLoading = false;
       state.users = action.payload;
     });
     builder.addCase(fetchUsers.rejected, (state, action) => {
-      state.isLoading = false;
       state.error = action.error;
     });
     ////////////////////////  ADD a USER with Faker
