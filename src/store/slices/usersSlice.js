@@ -1,6 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { fetchUsers } from '../thunks/fetchUsers';
 import { addUser } from '../thunks/addUser';
+import { removeUser } from '../thunks/removeUser';
 
 const usersSlice = createSlice({
   name: 'users',
@@ -10,12 +11,7 @@ const usersSlice = createSlice({
     error: null,
   },
   extraReducers(builder) {
-    // ///////// FETCH all users in db
-    // builder.addCase(fetchUsers.pending, (state, action) => {
-    //   // Update our state object however appropriate
-    //   // to show the user what we are loading data
-    //   state.isLoading = true;
-    // });
+    //////////////////////// FETCH a USER
     builder.addCase(fetchUsers.fulfilled, (state, action) => {
       state.users = action.payload;
     });
@@ -23,14 +19,22 @@ const usersSlice = createSlice({
       state.error = action.error;
     });
     ////////////////////////  ADD a USER with Faker
-    builder.addCase(addUser.pending, (state, action) => {
-      state.isLoading = true;
-    });
     builder.addCase(addUser.fulfilled, (state, action) => {
-      state.isLoading = false;
       state.users.push(action.payload);
     });
     builder.addCase(addUser.rejected, (state, action) => {
+      state.error = action.error;
+    });
+    ////////////////////// REMOVE a USER
+    builder.addCase(removeUser.pending, (state, action) => {
+      state.isLoading = true;
+    });
+    builder.addCase(removeUser.fulfilled, (state, action) => {
+      state.isLoading = false;
+      // FIX ME!!!
+      console.log(action);
+    });
+    builder.addCase(removeUser.rejected, (state, action) => {
       state.isLoading = false;
       state.error = action.error;
     });
