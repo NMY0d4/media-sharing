@@ -10,7 +10,6 @@ function AlbumsList({ user }) {
 
   const handleAddAlbum = () => {
     addAlbum(user);
-    console.log(results);
   };
 
   let content;
