@@ -31,5 +31,5 @@ export {
 export {
   useFetchPhotosQuery,
   useAddPhotoMutation,
-  UseRemovePhotoMutation,
+  useRemovePhotoMutation,
 } from './apis/photosApi';
