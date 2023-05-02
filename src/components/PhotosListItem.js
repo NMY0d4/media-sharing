@@ -1,4 +1,4 @@
-function PhotosListItem({album}) {
+function PhotosListItem({ photo }) {
   return <div>PhotosListItem</div>;
 }
 
