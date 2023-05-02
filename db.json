@@ -19,6 +19,10 @@
     {
       "name": "Vicki Lubowitz",
       "id": 8
+    },
+    {
+      "name": "Ms. Harry Heller",
+      "id": 9
     }
   ],
   "albums": [
@@ -81,6 +85,21 @@
       "title": "Id doloremque.",
       "userId": 5,
       "id": 34
+    },
+    {
+      "title": "Nam iste libero a.",
+      "userId": 8,
+      "id": 35
+    },
+    {
+      "title": "Magnam magnam tenetur.",
+      "userId": 9,
+      "id": 36
+    },
+    {
+      "title": "Iure qui.",
+      "userId": 9,
+      "id": 37
     }
   ],
   "photos": []
