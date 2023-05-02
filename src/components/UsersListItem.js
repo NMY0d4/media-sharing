@@ -18,12 +18,12 @@ function UsersListItem({ user }) {
         <GoTrashcan />
       </Button>
       {error && <div>Error deleting user.</div>}
-      {user.name}
+      <h3 className='font-semibold'>{user.name}</h3>
     </>
   );
 
   return (
-    <ExpandablePanel header={header}>
+    <ExpandablePanel className='bg-gray-200 mb-5' header={header}>
       <AlbumsList user={user} />
     </ExpandablePanel>
   );

@@ -24,7 +24,7 @@ function AlbumListItem({ album }) {
     </>
   );
   return (
-    <ExpandablePanel header={header}>
+    <ExpandablePanel className='bg-white' header={header}>
       List of photos in the album
     </ExpandablePanel>
   );
